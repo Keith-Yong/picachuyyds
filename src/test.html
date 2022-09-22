@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+</head>
+<body>
+    <style id="demo2"></style>
+    <div id="demo"></div>
+    <div id="buttons">
+        <button id ='btnPause'>暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnslow">慢速</button>
+        <button id="btnfast">快速</button>
+        
+    </div>
+    <style>
+
+         *{box-sizing: border-box;}
+         ::after ,::before {box-sizing: border-box;}
+
+          #demo2{
+            display: none;
+          }
+
+        
+
+         #demo{
+            position: fixed;
+            height: 50vh;
+            top:0 ;
+            left: 0;
+        
+            width: 100%;
+            /* background: white; */
+           
+           
+            /* border: 1px solid red; */
+            overflow-y: auto;
+            
+            
+            /* border: 1px solid red; */
+
+
+
+        }
+
+        #demo::-webkit-scrollbar {
+            display: none;
+        }
+        #html{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh;
+           
+
+
+
+        }
+
+        #buttons {
+            position: fixed;
+            right: 0;
+            top: 0;
+            /* width: 30px;
+            height: 30px; */
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-right:  10px;
+        }
+        #buttons > button {
+            margin-bottom: 10px;
+            /* 手机屏幕看不清，调节button按钮 */
+            padding: 4px 8px;
+        }
+    </style>
+    <div id="html">
+        <div class="skin">
+            <!-- .eye*2+.nose+.face*2+mouth 快捷键建立标签-->
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose">
+               <div class="yuan"></div>
+            </div>
+             <div class="face left">
+               <!-- <img src="https://s1.plumeta.com/i/2022/09/09/tto7aq.gif" /> -->
+            </div> 
+            <div class="face right">
+            <!-- <img src="https://s1.plumeta.com/i/2022/09/09/tto7aq.gif" /> -->
+            </div> 
+            <div class = "mouth">
+                <div class="up">
+                    <div class="lip left"></div>
+                    <div class="lip right"></div>
+                </div>
+                <div class="down">
+                    <div class="sanxing">
+                        <div class="yuan1"></div>
+                    </div>
+               
+                </div>
+           
+            </div>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
